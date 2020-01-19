@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content>
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Imaginez un générateur de citations · OpenClassrooms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="./bootstrap/fav-icon.png">
+
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/form-validation.css" rel="stylesheet">
+    <style type="text/css">
+      .message {
+          color: #31708f;
+          background-color: #d9edf7;
+          border-color: #bce8f1;
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid transparent;
+          border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./bootstrap/fav-icon.png" width="72" height="72">
+        <h2>Imaginez un générateur de citations</h2>
+        <p class="lead">Objectif : construire un générateur de citations dont les citations seront construites aléatoirement en assemblant des morceaux de phrase.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2">
+          <h4 class="mb-3">Paramètres</h4>
+
+          <div class="mb-3">
+            <h5 class="mb-3">Etape</h5>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="etape1" name="etape" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="etape1">Etape 1 : des citations aléatoires</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="etape2" name="etape" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="etape2">Etape 2 : des citations configurables</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3" id="divEtape1" style="display: none;">
+            <!-- des citations aléatoires -->
+          </div>
+
+          <div class="mb-3" id="divEtape2" style="display: none;">
+            <h6 class="mb-3">Citation(s)</h6>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="citation1" name="citation" type="radio" class="custom-control-input" value="1" required>
+                <label class="custom-control-label" for="citation1">1 citation</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="citation2" name="citation" type="radio" class="custom-control-input" value="2" required>
+                <label class="custom-control-label" for="citation2">2 citations</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="citation3" name="citation" type="radio" class="custom-control-input" value="3" required>
+                <label class="custom-control-label" for="citation3">3 citations</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="citation4" name="citation" type="radio" class="custom-control-input" value="4" required>
+                <label class="custom-control-label" for="citation4">4 citations</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="citation5" name="citation" type="radio" class="custom-control-input" value="5" required>
+                <label class="custom-control-label" for="citation5">5 citations</label>
+              </div>
+            </div>
+
+            <h6 class="mb-3">Type</h6>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="type1" name="type" type="radio" class="custom-control-input" value="1" required>
+                <label class="custom-control-label" for="type1">Type 1</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="type2" name="type" type="radio" class="custom-control-input" value="2" required>
+                <label class="custom-control-label" for="type2">Type 2</label>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit" id="buttonEtape" style="display: none;">Générer</button>
+
+        </div>
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Résultat</h4>
+          <h5 id="nomEtape"></h5>
+          <p id="message"></p>
+          <ul id="resultat"></ul>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Hervé PEREIRA</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="http://www.herve-pereira.fr/">Hervé PEREIRA</a></li>
+          <li class="list-inline-item"><a href="https://openclassrooms.com/">OpenClassrooms</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="./bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./bootstrap/jquery.slim.min.js"><\/script>')</script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/form-validation.js"></script>
+    <script src="./citation.js"></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
