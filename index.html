@@ -17,15 +17,21 @@
     <!-- Custom styles for this template -->
     <link href="./bootstrap/form-validation.css" rel="stylesheet">
     <style type="text/css">
-      .message {
-          color: #31708f;
-          background-color: #d9edf7;
-          border-color: #bce8f1;
-          padding: 15px;
-          margin-bottom: 20px;
-          border: 1px solid transparent;
-          border-radius: 4px;
-      }
+	.message {
+		color: #31708f;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+		padding: 15px;
+		margin-bottom: 20px;
+		border: 1px solid transparent;
+		border-radius: 4px;
+	}
+	#resultat li { 
+		list-style-type: none; 
+	}
+	#resultat li:before {
+		content: "- "; /* on affiche une chaîne de caractère */
+	}
     </style>
   </head>
   <body class="bg-light">
@@ -122,6 +128,6 @@
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./bootstrap/form-validation.js"></script>
     <script src="./citation.js"></script>
-    <script src="./js.js"></script>
+    <script src="./projet.js"></script>
   </body>
 </html>
